@@ -305,7 +305,7 @@ public abstract class AbstractRTPConnector
      *
      * @throws IOException if an error occurs during the creation of the RTP
      */
-    public RTPConnectorOutputStream getDataOutputStream()
+    public synchronized RTPConnectorOutputStream getDataOutputStream()
         throws IOException
     {
         return getDataOutputStream(true);
